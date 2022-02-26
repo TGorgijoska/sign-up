@@ -1,2 +1,2 @@
 # Sign-up form
-Sign-up Form for The Odin Project 
+Simple sign-up form for The Odin Project using HTML and CSS
