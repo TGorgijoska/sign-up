@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+:root{
+    --clr-bg: whitesmoke;
+    --clr-btn: orangered;
+    --clr-focus: blue;
+    --clr-error: red;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    display:flex;
+    justify-content:center;
+}
+header{
+    position: relative;
+    width:40%;
+    background-image: url('./img/bg-img.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.header-logo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0;
+    background: rgba(0, 0, 0,0.5);
+    font-size: 2.5vw;
+}
+.header-logo img{
+    width: 80px;
+    max-width: 100%;
+}
+.img_credit{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+header a{
+    color: white;
+}
+
+main{
+    background-color: var(--clr-bg);
+
+}
+.width{
+    margin: 5%;
+}
+.heading p{
+    font-weight: bold;
+}
+.form h2{
+    margin: 1em 0;
+}
+.form_section{
+    background-color:#fff;
+    padding: 1em 0;
+}
+.form-group{
+    display:flex;
+    flex-wrap: wrap;
+}
+.form-item{
+    display:flex;
+    flex-direction: column;
+    margin: 0.5em 0;
+}
+.form-item + .form-item{
+    margin-left: 5em;
+}
+.form-item label{
+    text-transform:uppercase;
+}
+.form-item input{
+    padding: 0.3em 0.5em;
+    border: 1px solid lightgrey;
+    border-radius:3px;
+    outline: none;
+}
+.form-item input:focus{
+    border: 1px solid var(--clr-focus);
+    box-shadow: 3px 3px 5px lightgrey;
+}
+input.error{
+    border: 1px solid var(--clr-error);
+}
+.error-text{
+    color: var(--clr-error);
+    font-size: 0.8em;
+}
+button[type="submit"]{
+    background-color: var(--clr-btn);
+    color: #fff;
+    padding: 1em 3em;
+    border-radius: 5px;
+    border: none;
+}
+main a{
+    color: var(--clr-btn);
+    font-weight: bold;
+    text-decoration: none;
+}
