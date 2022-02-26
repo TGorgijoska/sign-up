@@ -107,20 +107,27 @@ header a{
 
 main{
     background-color: var(--clr-bg);
+    padding: 5% 0;
 
 }
 .width{
     margin: 5%;
 }
+.heading{
+    width: 80%;
+}
 .heading p{
+    margin: 1em 0;
+    font-size: 1.1em;
     font-weight: bold;
 }
 .form h2{
-    margin: 1em 0;
+    margin: 0.5em 0;
 }
 .form_section{
     background-color:#fff;
-    padding: 1em 0;
+    padding: 0.5em 0;
+    box-shadow: 0 5px 10px lightgrey;
 }
 .form-group{
     display:flex;
@@ -157,7 +164,7 @@ input.error{
 button[type="submit"]{
     background-color: var(--clr-btn);
     color: #fff;
-    padding: 1em 3em;
+    padding: 0.8em 3em;
     border-radius: 5px;
     border: none;
 }
